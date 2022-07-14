@@ -8,34 +8,30 @@
           round
           icon="menu"
           aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
+          @click="toggleLeftDrawer"/>
 
         <q-toolbar-title>
-          Quasar App
+          Megatones Electronic
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>Megatones v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
     <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
-      bordered
-    >
+      bordered>
       <q-list>
         <q-item-label
-          header
-        >
-          Essential Links
+          header>
+          Menu de Navegacion
         </q-item-label>
 
         <EssentialLink
           v-for="link in essentialLinks"
           :key="link.title"
-          v-bind="link"
-        />
+          v-bind="link"/>
       </q-list>
     </q-drawer>
 
@@ -51,7 +47,7 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Docs',
+    title: 'Inicio',
     caption: 'quasar.dev',
     icon: 'school',
     link: 'https://quasar.dev'
