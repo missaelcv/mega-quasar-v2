@@ -48,7 +48,7 @@ import EssentialLink from 'components/EssentialLink.vue'
 const linksList = [
   {
     title: 'Inicio',
-    caption: 'quasar.dev',
+    caption: 'Inicio Megatone',
     icon: 'school',
     link: 'https://quasar.dev'
   },
